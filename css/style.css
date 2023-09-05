@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    background-color: #ddd;
+    max-width: 1000px;
+}
+
+.container {
+    margin: 20px;
+    padding: 10px;
+}
+
+.section__list {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+.section__header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding: 20px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.form__subheader {
+    border-bottom: 2px solid #ddd;
+    background-color: white;
+    padding: 20px;
+    margin: 0px;
+    font-weight: 900;
+}
+
+.form__input {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 10px solid #ddd;
+}
+
+.form__button {
+    background-color: teal;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    border: 0px;
+}
+
+.form__field {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.form__header {
+    font-weight: 900;
+}
+
+.section__listItem {
+    list-style: none;
+    padding: 10px;
+}
