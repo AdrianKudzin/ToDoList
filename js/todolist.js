@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "odrobić lekcję",
-            done: false,
-        },
-        {
-            content: "zjeść pierogi",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -28,20 +19,7 @@
         render();
     }
 
-    const render = () => {
-        let htmlString = "";
-
-        for (const task of tasks) {
-            htmlString += `
-                <li class="section__listItem${task.done ? " section__listItem--done" : ""}">
-                    <button class="js-done section__button--done">zrobione?</button>
-                    ${task.content} 
-                    <button class="section__button--done js-remove">usuń</button>
-                </li>
-            `;
-        };
-
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+    bindEvents = () => {
 
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -58,7 +36,24 @@
                 toggleTaskDone(index);
             });
         });
+    }
 
+    const render = () => {
+        let htmlString = "";
+
+        for (const task of tasks) {
+            htmlString += `
+                <li class="section__listItem${task.done ? " section__listItem--done" : ""}">
+                    <button class="js-done section__button--done">zrobione?</button>
+                    ${task.content} 
+                    <button class="section__button--done js-remove">usuń</button>
+                </li>
+            `;
+        };
+
+        document.querySelector(".js-tasks").innerHTML = htmlString;
+
+        bindEvents();
     };
 
     const onFormSubmit = (event) => {
