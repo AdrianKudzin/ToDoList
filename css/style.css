@@ -85,3 +85,10 @@ html {
 .section__listItem--done {
     text-decoration: line-through;
 }
+
+.section__button--done {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    padding: 5px;
+}
