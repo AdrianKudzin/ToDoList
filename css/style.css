@@ -12,7 +12,8 @@ html {
     font-family: 'Lato', sans-serif;
     margin: auto;
     background-color: #ddd;
-    max-width: 1000px;
+    max-width: 1400px;
+    line-height: 1.5;
 }
 
 .container {
@@ -51,6 +52,10 @@ html {
     border-bottom: 10px solid #ddd;
 }
 
+.form__field:focus {
+    border: 1px solid black;
+}
+
 .form__button {
     background-color: teal;
     color: #ffffff;
@@ -74,4 +79,5 @@ html {
 .section__listItem {
     list-style: none;
     padding: 10px;
+    border-bottom: 2px solid #ddd;
 }
