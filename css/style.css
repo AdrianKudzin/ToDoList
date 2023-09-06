@@ -81,3 +81,7 @@ html {
     padding: 10px;
     border-bottom: 2px solid #ddd;
 }
+
+.section__listItem--done {
+    text-decoration: line-through;
+}
