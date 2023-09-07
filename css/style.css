@@ -81,6 +81,10 @@ html {
     list-style: none;
     padding: 10px;
     border-bottom: 2px solid #ddd;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .section__listItem--done {
@@ -90,6 +94,18 @@ html {
 .section__button--done {
     cursor: pointer;
     color: white;
-    background-color: red;
-    padding: 5px;
+    background-color: forestgreen;
+    min-height: 50px;
+    min-width: 50px;
+    padding: 10px;
+}
+
+.section__button {
+    margin:10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.section__taskContent {
+    padding: 20px;
 }

@@ -43,15 +43,21 @@
 
         for (const task of tasks) {
             htmlString += `
-                <li class="section__listItem${task.done ? " section__listItem--done" : ""}">
-                    <button class="js-done section__button--done">zrobione?</button>
-                    ${task.content} 
-                    <button class="section__button--done js-remove">usuń</button>
+                <li class="section__listItem">
+                    <button class="js-done section__button section__button--done">${task.done ? "✔" : ""}</button>
+                    <span class="section__taskContent${task.done ? " section__listItem--done" : ""}">${task.content}</span> 
+                    <button class="js-remove section__button section__button--done">🗑</button>
                 </li>
             `;
         };
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+
+        const focusInput = document.querySelector(".js-formButton");
+
+        focusInput.addEventListener("click", function (newTaskContent) {
+            newTaskContent.focus();
+        });
 
         bindEvents();
     };
