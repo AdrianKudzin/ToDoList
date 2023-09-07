@@ -53,26 +53,23 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-        const focusInput = document.querySelector(".js-formButton");
-
-        focusInput.addEventListener("click", function (newTaskContent) {
-            newTaskContent.focus();
-        });
-
         bindEvents();
     };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const input = document.querySelector(".js-newTask");
+        const newTaskContent = input.value.trim();
 
         if (newTaskContent === "") {
             return;
         }
 
         addNewTask(newTaskContent);
-    }
+        input.value = "";
+        input.focus();
+    };
 
     const init = () => {
         render();
