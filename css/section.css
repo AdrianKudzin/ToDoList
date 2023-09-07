@@ -1,0 +1,48 @@
+.section__list {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 20px;
+    margin: 0px;
+    min-height: 50px;
+}
+
+.section__header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding: 20px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.section__listItem {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__listItem--done {
+    text-decoration: line-through;
+}
+
+.section__button--done {
+    cursor: pointer;
+    color: white;
+    background-color: forestgreen;
+    min-height: 50px;
+    min-width: 50px;
+    padding: 10px;
+}
+
+.section__button {
+    margin: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.section__taskContent {
+    padding: 20px;
+}
