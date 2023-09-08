@@ -14,6 +14,7 @@ html {
     background-color: #ddd;
     max-width: 1400px;
     line-height: 1.5;
+    word-break: break-word;
 }
 
 .container {

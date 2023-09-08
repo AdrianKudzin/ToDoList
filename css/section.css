@@ -34,11 +34,11 @@
     background-color: #228b22;
     min-height: 50px;
     min-width: 50px;
-    /* padding: 10px; */
 }
 
 .section__taskContent {
     margin: 20px;
+    font-size: 20px;
 }
 
 .section__buttonDelete {
