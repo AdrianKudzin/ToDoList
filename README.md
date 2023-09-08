@@ -8,3 +8,5 @@ Application for adding tasks to list. You have to write task then submit it by p
 - CSS
 - Javascript
 - BEM convention
+## Demo
+adriankudzin.github.io/ToDoList/
