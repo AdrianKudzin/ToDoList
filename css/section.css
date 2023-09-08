@@ -28,21 +28,23 @@
     text-decoration: line-through;
 }
 
-.section__button--done {
+.section__buttonDone {
     cursor: pointer;
-    color: white;
-    background-color: forestgreen;
+    color: #ffffff;
+    background-color: #228b22;
     min-height: 50px;
     min-width: 50px;
-    padding: 10px;
-}
-
-.section__button {
-    margin: 10px;
-    max-width: 50px;
-    max-height: 50px;
+    /* padding: 10px; */
 }
 
 .section__taskContent {
-    padding: 20px;
+    margin: 20px;
+}
+
+.section__buttonDelete {
+    background-color: #dc143c;
+    color: #ffffff;
+    min-height: 50px;
+    min-width: 50px;
+    cursor: pointer;
 }
