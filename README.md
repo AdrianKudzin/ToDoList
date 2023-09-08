@@ -9,4 +9,4 @@ Application for adding tasks to list. You have to write task then submit it by p
 - Javascript
 - BEM convention
 ## Demo
-adriankudzin.github.io/ToDoList/
+https://adriankudzin.github.io/ToDoList/
