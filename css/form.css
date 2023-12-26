@@ -29,6 +29,12 @@
     cursor: pointer;
     margin-left: 20px;
     border: 0px;
+    transition: 0.5s;
+}
+
+.form__button:hover {
+    background-color: #00b3b3;
+    transform: scale(1.1);
 }
 
 .form__field {

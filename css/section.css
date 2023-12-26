@@ -32,8 +32,9 @@
     cursor: pointer;
     color: #ffffff;
     background-color: #228b22;
-    min-height: 50px;
-    min-width: 50px;
+    height: 40px;
+    width: 40px;
+    padding: 0;
 }
 
 .section__taskContent {
@@ -44,7 +45,17 @@
 .section__buttonDelete {
     background-color: #dc143c;
     color: #ffffff;
-    min-height: 50px;
-    min-width: 50px;
+    height: 40px;
+    width: 40px;
     cursor: pointer;
+}
+
+.section__buttonDelete:hover {
+    transition: 1s;
+    background-color: #ec365b;
+}
+
+.section__buttonDone:hover {
+    transition: 1s;
+    background-color: #2cb52c;
 }
